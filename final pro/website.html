@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <link rel="shortcut icon" type="png" href="images/icon/favicon.png" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Comaptible" content="IE=edge" />
+    <title>LearnEd</title>
+    <meta name="desciption" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="website.css" />
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script>
+      $(window).on("scroll", function () {
+        if ($(window).scrollTop()) {
+          $("nav").addClass("black");
+        } else {
+          $("nav").removeClass("black");
+        }
+      });
+    </script>
+  </head>
+  <body>
+  
+    
+    <!-- Navigation Bar -->
+    <header id="come">
+      <nav>
+        <div class="had"></div>
+        <ul>
+          <li><a class="active" href="">Home</a></li>
+          <li><a href="Books.html">Books</a></li>
+          <li><a href="#team_section">Articles</a></li>
+          <li><a href="#services_section">Stories</a></li>
+          <li><a href="#contactus_section">Contact</a></li>
+        </ul>
+       
+        <a class="get-started" href="login.html">Get Started</a>
+        <img
+          src="images/icon/menu.png"
+          class="menu"
+          onclick="sideMenu(0)"
+          alt="menu" />
+      </nav>
+       <section>
+        <div class="main"> 
+          <input type="text" name="" class="query" value="" placeholder="search for>
+          button class="find>go</button>
+  </div>
+       </section>
+       <script>
+        let query = document.querySelector('.query');
+         let searchBtn = document.querySelector('.find');
+         searchBtn.onclick = function(){
+          let url ='https://www.google.com/search?q='+query.value;
+          window.open(url,'_self');
+         }
+       </script>
+      </div>
+  </body>
+</html>
