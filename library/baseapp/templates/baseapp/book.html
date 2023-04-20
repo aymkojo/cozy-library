@@ -1,0 +1,91 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/book.css'%}" />
+  </head>
+  <body>
+    <div class="man">
+      <input type="search"  class="query" placeholder="Search here ......." />
+      <button  class="find">go</button>
+    </div>
+     <script>
+        let query = document.querySelector('.query');
+         let searchBtn = document.querySelector('.find');
+         searchBtn.onclick = function(){
+          let url ='https://www.google.com/search?q='+query.value;
+          window.open(url,'_self');
+         }
+       </script>
+    <section class="container">
+      <div class="card">
+        <div class="card-image car-1"></div>
+        <h2>Title</h2>
+        <p>Text</p>
+        <a href="https://www.junkybooks.com/administrator/thebooks/640e457cbf6c9-the-handy-math-answer-book.pdf">Download</a>
+      </div>
+      <div class="card">
+        <div class="card-image car-2"></div>
+        <h2>Title</h2>
+        <p>Text</p>
+        <a href="">Download</a>
+      </div>
+      <div class="card">
+        <div class="card-image car-3"></div>
+        <h2>Title</h2>
+        <p>Text</p>
+        <a href="">Download</a>
+      </div>
+      <div class="card">
+        <div class="card-image car-4"></div>
+        <h2>Title</h2>
+        <p>Text</p>
+        <a href="">Download</a>
+      </div>
+      <div class="card">
+        <div class="card-image car-5"></div>
+        <h2>Title</h2>
+        <p>Text</p>
+        <a href="">Download</a>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="card">
+        <div class="card-image car-6"></div>
+        <h2>Title</h2>
+        <p>Text</p>
+        <a href="">Download</a>
+      </div>
+      <div class="card">
+        <div class="card-image car-7"></div>
+        <h2>Title</h2>
+        <p>Text</p>
+        <a href="">Download</a>
+      </div>
+      <div class="card">
+        <div class="card-image car-8"></div>
+        <h2>Title</h2>
+        <p>Text</p>
+        <a href="">Download</a>
+      </div>
+      <div cl ass="card">
+        <div class="card-image car-9"></div>
+        <h2>Title</h2>
+        <p>Text</p>
+        <a href="">Download</a>
+      </div>
+      <div class="card">
+        <div class="card-image car-10"></div>
+        <h2>Title</h2>
+        <p>Text</p>
+        <a href="">Download</a>
+      </div>
+
+    
+  </body>
+</html>
