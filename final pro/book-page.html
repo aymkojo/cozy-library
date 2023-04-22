@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="books/cozy logo.png">
+    <link rel="stylesheet" href="books.css" />
+    <link rel="stylesheet" href="book-page.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="logo">
+            <img src="books/cozy logo.png" alt="logo">
+            <h1>COZY E-LIBRARY</h1>
+          </div>
+        </nav>
+    </header>
+
+    <!--showcase part-->
+    <div class="showcase">
+         <img src="books/unsplash-gray-book-list-a62bcc082c3c40c8efc69168cda2a7c8.jpg" alt="showpic">
+    </div>
+
+    <div class="card-page">
+        <div class="cardbox">
+            <div class="book-about">
+                <img  id="selectedImage" src="books/book-cover-template-design_1201-30.jpg" alt="">
+                <div class="download-anim">
+                    <div class="animated-download">
+                        <div class="backdrop">
+                            <div class="frontdrop">
+                                <img src="books/download-regular-24.png" alt="">
+                            </div>
+                        </div>
+                        <h6>Download</h6>
+                    </div>
+                    <div style="text-align: center; padding-right: 10px;">click to read or click download icon to download</div>
+                </div>
+                
+            </div>
+            <div class="bookinfo">
+                <h1>DISCLAIMER!!!</h1>
+                <p>
+                    Generating random paragraphs can be an excellent way for
+                     writers to get their creative flow going at the beginning of
+                      the day. The writer has no idea what topic the random paragraph will be about
+                       when it appears. This forces the writer to use creativity to complete one of 
+                       three common writing challenges. The writer can use the paragraph as the first 
+                </p>
+            </div>
+        </div>
+    </div>
+     <!-- ending design-->
+    <div class="fancy">
+        <img src="books/kindpng_1498863.png" alt="">
+    </div>
+    <div class="insptext">
+        <h1>KNOWLEDGE IS POWER!!!</h1>
+    </div>
+     <!--footer components-->
+     <div class="top"><img class="footerborder" src="books/bg-footer-top-desktop.svg" alt=""></div>
+     <div class="footer">
+       <div class="footerleft">
+         <div>
+           <img class="footerlogo" src="books/cozy logo.png" alt="">
+         </div>
+         <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
+           vestibulum a, ultrices quis sem.
+         </div>
+         <div class="phone">
+           <img src="books/icon-phone.svg" alt="">
+           <p>Phone: +1-543-123-4567</p>
+         </div>
+         <div class="phone">
+           <img src="books/icon-email.svg" alt="">
+           <p>example@huddle.com</p>
+         </div>
+         <div style="display: flex; width: 100px; justify-content: space-between;">
+           <img style="width: 22px;height: 22px; background-color: white; padding: 0px; margin-top: 20px;" src="books/square-facebook.svg" alt="fblogo">
+           <img style="width: 22px;height: 22px; background-color: white; padding: 0px; margin-top: 20px;" src="books/instagram.svg" alt="iglogo">
+           <img style="width: 22px;height: 22px; background-color: white; padding: 0px; margin-top: 20px;" src="books/square-twitter.svg" alt="twitlogo">
+         </div>
+       </div>
+       <div class="footerright">
+         <h1>NEWSLETTER</h1>
+         <p>To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
+           send you spam or pass on your email address
+         </p>
+         <div>
+           <input type="text">
+           <button>Subscribe</button>
+         </div>
+        </div>
+    </div>
+    
+
+    <script>
+        // Retrieve the selected image URL from localStorage
+        var selectedImage = localStorage.getItem('selectedImage');
+
+        // If a selected image was found, update the <img> element
+        if (selectedImage) {
+        var imgElement = document.getElementById('selectedImage');
+        imgElement.src = selectedImage;
+        }
+
+        // Save the selected image URL in localStorage
+        window.addEventListener('beforeunload', function() {
+        localStorage.setItem('selectedImage', selectedImage);
+        });
+    </script>
+
+</body>
+</html>

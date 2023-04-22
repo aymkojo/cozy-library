@@ -4,87 +4,246 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Home</title>
     <link rel="stylesheet" href="books.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./books/cozy logo.png">
   </head>
   <body>
-    <div class="man">
-      <input type="search"  class="query" placeholder="Search here ......." />
-      <button  class="find">go</button>
+    <!--Header part-->
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="books/cozy logo.png" alt="logo">
+          <h1>COZY E-LIBRARY</h1>
+        </div>
+      </nav>
+    </header>
+
+
+    <!--showcase part-->
+    <div class="showcase">
+      <img src="books/unsplash-gray-book-list-a62bcc082c3c40c8efc69168cda2a7c8.jpg" alt="showpic">
     </div>
-     <script>
-        let query = document.querySelector('.query');
-         let searchBtn = document.querySelector('.find');
-         searchBtn.onclick = function(){
-          let url ='https://www.google.com/search?q='+query.value;
-          window.open(url,'_self');
-         }
-       </script>
-    <section class="container">
-      <div class="card">
-        <div class="card-image car-1"></div>
-        <h2>Title</h2>
-        <p>Text</p>
-        <a href="https://www.junkybooks.com/administrator/thebooks/640e457cbf6c9-the-handy-math-answer-book.pdf">Download</a>
+
+
+
+    <!--main section-->
+    <section>
+      <!--book subtitle-->
+      <div class="ontop"><h1>BOOKS</h1></div>
+
+      <!--card part-->
+      <div class="card-container">
+        <div class="card" data-id="1">
+          <div class="img-container">
+            <a href="book-page.html"><img onclick="chooseImage('books/pngtree-color-matching-autumn-photography-book-cover-design-image_400413.jpg')" src="books/pngtree-color-matching-autumn-photography-book-cover-design-image_400413.jpg" alt=""></a>
+          </div>
+          <div class="card-discription">
+            <h6>BOOK NAME: Anual Report</h6>
+            <p class="date">DATE:2017</p>
+          </div>
+          <div class="download-container">
+            <img src="books/download-regular-24.png" alt="">
+            <h2>Download</h2>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img-container">
+            <a href="book-page.html"><img onclick="chooseImage('books/business-annual-report-cover-page-design-template-vector.jpg')" src="books/business-annual-report-cover-page-design-template-vector.jpg" alt=""></a>
+          </div>
+          <div class="card-discription">
+            <h6>BOOK NAME: Anual Report</h6>
+            <p class="date">DATE:2017</p>
+          </div>
+          <div class="download-container">
+            <img src="books/download-regular-24.png" alt="">
+            <h2>Download</h2>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img-container">
+            <a href="book-page.html"><img onclick="chooseImage('books/book-cover-template-design_1201-30.jpg')" src="books/book-cover-template-design_1201-30.jpg" alt=""></a>
+          </div>
+          <div class="card-discription">
+            <h6>BOOK NAME: Anual Report</h6>
+            <p class="date">DATE:2017</p>
+          </div>
+          <div class="download-container">
+            <img src="books/download-regular-24.png" alt="">
+            <h2>Download</h2>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img-container">
+            <a href="book-page.html"><img onclick="chooseImage('books/pngtree-abstract-warm-autumn-book-cover-with-bronzing-leaves-image_401042.jpg')" src="books/pngtree-abstract-warm-autumn-book-cover-with-bronzing-leaves-image_401042.jpg" alt=""></a>
+          </div>
+          <div class="card-discription">
+            <h6>BOOK NAME: Anual Report</h6>
+            <p class="date">DATE:2017</p>
+          </div>
+          <div class="download-container">
+            <img src="books/download-regular-24.png" alt="">
+            <h2>Download</h2>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img-container">
+            <a href="book-page.html"><img onclick="chooseImage('books/photo-1592496431122-2349e0fbc666.avif')" src="books/photo-1592496431122-2349e0fbc666.avif" alt=""></a>
+          </div>
+          <div class="card-discription">
+            <h6>BOOK NAME: Anual Report</h6>
+            <p class="date">DATE:2017</p>
+          </div>
+          <div class="download-container">
+            <img src="books/download-regular-24.png" alt="">
+            <h2>Download</h2>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img-container">
+            <a href="book-page.html"><img onclick="chooseImage('books/photo-2.avif')" src="books/photo-2.avif" alt=""></a>
+          </div>
+          <div class="card-discription">
+            <h6>BOOK NAME: Anual Report</h6>
+            <p class="date">DATE:2017</p>
+          </div>
+          <div class="download-container">
+            <img src="books/download-regular-24.png" alt="">
+            <h2>Download</h2>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img-container">
+            <a href="book-page.html"><img onclick="chooseImage('books/photo-3.avif')" src="books/photo-3.avif" alt=""></a>
+          </div>
+          <div class="card-discription">
+            <h6>BOOK NAME: Anual Report</h6>
+            <p class="date">DATE:2017</p>
+          </div>
+          <div class="download-container">
+            <img src="books/download-regular-24.png" alt="">
+            <h2>Download</h2>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img-container">
+            <a href="book-page.html"><img onclick="chooseImage('books/pngtree-warm-autumn-bronzing-leaves-abstract-book-cover-image_400813.jpg')" src="books/pngtree-warm-autumn-bronzing-leaves-abstract-book-cover-image_400813.jpg" alt=""></a>
+          </div>
+          <div class="card-discription">
+            <h6>BOOK NAME: Anual Report</h6>
+            <p class="date">DATE:2017</p>
+          </div>
+          <div class="download-container">
+            <img src="books/download-regular-24.png" alt="">
+            <h2>Download</h2>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img-container">
+            <a href="book-page.html"><img onclick="chooseImage('books/photo-4.avif')" src="books/photo-4.avif" alt=""></a>
+          </div>
+          <div class="card-discription">
+            <h6>BOOK NAME: Anual Report</h6>
+            <p class="date">DATE:2017</p>
+          </div>
+          <div class="download-container">
+            <img src="books/download-regular-24.png" alt="">
+            <h2>Download</h2>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img-container">
+            <a href="book-page.html"><img onclick="chooseImage('books/photo-5.avif')" src="books/photo-5.avif" alt=""></a>
+          </div>
+          <div class="card-discription">
+            <h6>BOOK NAME: Anual Report</h6>
+            <p class="date">DATE:2017</p>
+          </div>
+          <div class="download-container">
+            <img src="books/download-regular-24.png" alt="">
+            <h2>Download</h2>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img-container">
+            <a href="book-page.html"><img onclick="chooseImage('books/booksantiracism-lowres-9234.webp')" src="books/booksantiracism-lowres-9234.webp" alt=""></a>
+          </div>
+          <div class="card-discription">
+            <h6>BOOK NAME: Anual Report</h6>
+            <p class="date">DATE:2017</p>
+          </div>
+          <div class="download-container">
+            <img src="books/download-regular-24.png" alt="">
+            <h2>Download</h2>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img-container">
+            <a href="book-page.html"><img onclick="chooseImage('books/photo-6.avif')" src="books/photo-6.avif" alt=""></a>
+          </div>
+          <div class="card-discription">
+            <h6>BOOK NAME: Anual Report</h6>
+            <p class="date">DATE:2017</p>
+          </div>
+          <div class="download-container">
+            <img src="books/download-regular-24.png" alt="">
+            <h2>Download</h2>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <div class="card-image car-2"></div>
-        <h2>Title</h2>
-        <p>Text</p>
-        <a href="">Download</a>
+      <!-- ending design-->
+      <div class="fancy">
+        <img src="books/kindpng_1498863.png" alt="">
       </div>
-      <div class="card">
-        <div class="card-image car-3"></div>
-        <h2>Title</h2>
-        <p>Text</p>
-        <a href="">Download</a>
-      </div>
-      <div class="card">
-        <div class="card-image car-4"></div>
-        <h2>Title</h2>
-        <p>Text</p>
-        <a href="">Download</a>
-      </div>
-      <div class="card">
-        <div class="card-image car-5"></div>
-        <h2>Title</h2>
-        <p>Text</p>
-        <a href="">Download</a>
+      <div class="insptext">
+        <h1>KNOWLEDGE IS POWER!!!</h1>
       </div>
     </section>
 
-    <section class="container">
-      <div class="card">
-        <div class="card-image car-6"></div>
-        <h2>Title</h2>
-        <p>Text</p>
-        <a href="">Download</a>
+    <!--footer components-->
+    <div class="top"><img class="footerborder" src="books/bg-footer-top-desktop.svg" alt=""></div>
+    <div class="footer">
+      <div class="footerleft">
+        <div>
+          <img class="footerlogo" src="books/cozy logo.png" alt="">
+        </div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
+          vestibulum a, ultrices quis sem.
+        </div>
+        <div class="phone">
+          <img src="books/icon-phone.svg" alt="">
+          <p>Phone: +1-543-123-4567</p>
+        </div>
+        <div class="phone">
+          <img src="books/icon-email.svg" alt="">
+          <p>example@huddle.com</p>
+        </div>
+        <div style="display: flex; width: 100px; justify-content: space-between;">
+          <img style="width: 22px;height: 22px; background-color: white; padding: 0px; margin-top: 20px;" src="books/square-facebook.svg" alt="fblogo">
+          <img style="width: 22px;height: 22px; background-color: white; padding: 0px; margin-top: 20px;" src="books/instagram.svg" alt="iglogo">
+          <img style="width: 22px;height: 22px; background-color: white; padding: 0px; margin-top: 20px;" src="books/square-twitter.svg" alt="twitlogo">
+        </div>
       </div>
-      <div class="card">
-        <div class="card-image car-7"></div>
-        <h2>Title</h2>
-        <p>Text</p>
-        <a href="">Download</a>
+      <div class="footerright">
+        <h1>NEWSLETTER</h1>
+        <p>To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
+          send you spam or pass on your email address
+        </p>
+        <div>
+          <input type="text">
+          <button>Subscribe</button>
+        </div>
       </div>
-      <div class="card">
-        <div class="card-image car-8"></div>
-        <h2>Title</h2>
-        <p>Text</p>
-        <a href="">Download</a>
-      </div>
-      <div cl ass="card">
-        <div class="card-image car-9"></div>
-        <h2>Title</h2>
-        <p>Text</p>
-        <a href="">Download</a>
-      </div>
-      <div class="card">
-        <div class="card-image car-10"></div>
-        <h2>Title</h2>
-        <p>Text</p>
-        <a href="">Download</a>
-      </div>
+    </div>
 
-    
+
+   
+
+    <script>
+      function chooseImage(image) {
+        localStorage.setItem('selectedImage', image);
+      }
+    </script>
+
   </body>
 </html>

@@ -56,7 +56,7 @@ function register() {
   z.style.left = "110px";
   w.style.visibility = "hidden";
   b.style.color = "#fff";
-  a.style.color = "#000";
+  a.style.color = "#fff";
 }
 
 function login() {
@@ -65,7 +65,7 @@ function login() {
   z.style.left = "0px";
   w.style.visibility = "visible";
   a.style.color = "#fff";
-  b.style.color = "#000";
+  b.style.color = "#fff";
 }
 
 // CheckBox Function
